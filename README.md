@@ -18,8 +18,8 @@ open an issue on this repo and let me know!
 # this command enrols the currently attached Yubikey as an identity that can
 # assume two IAM roles.
     --identity unique-name-for-this-identity \
-    --roles role-name-that-can-be-assumed \
-    --roles maybe-a-second-role-name-too
+    --role role-name-that-can-be-assumed \
+    --role maybe-a-second-role-name-too
     
 # this command returns temporary IAM credentials in the format expected by the
 # aws cli and sdks. 
