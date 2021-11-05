@@ -1,4 +1,4 @@
-package main
+package types
 
 import (
 	"context"
@@ -28,12 +28,14 @@ type ListIdentitiesOutput struct {
 }
 
 type PutIdentityInput struct {
-	IdentityName                 string
-	CertificateSigningRequestPEM string
+	IdentityName          string `json:",omitempty"`
+	CertificateRequestDER []byte
+	AttestationDERs       [][]byte
 }
 
 type PutIdentityOutput struct {
-	CertificateId string
+	CertificateId  string
+	CertificateDER []byte
 }
 
 type DeleteIdentityInput struct {
