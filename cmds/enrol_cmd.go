@@ -21,7 +21,7 @@ func EnrolCmd(cmd *cobra.Command, args []string) error {
 
 	card, _ := cmd.PersistentFlags().GetString("card")
 	identityName, _ := cmd.PersistentFlags().GetString("identity")
-	roles, _ := cmd.PersistentFlags().GetStringSlice("roles")
+	roles, _ := cmd.PersistentFlags().GetStringSlice("role")
 
 	sess, err := session.NewSessionWithOptions(session.Options{SharedConfigState: session.SharedConfigEnable})
 	if err != nil {
