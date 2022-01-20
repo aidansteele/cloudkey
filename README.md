@@ -17,6 +17,7 @@ open an issue on this repo and let me know!
 ```
 # this command enrols the currently attached Yubikey as an identity that can
 # assume two IAM roles.
+$ cloudkey enrol
     --identity unique-name-for-this-identity \
     --role role-name-that-can-be-assumed \
     --role maybe-a-second-role-name-too
